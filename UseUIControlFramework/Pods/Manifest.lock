@@ -1,0 +1,24 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - FSCalendar (2.8.1)
+  - MGSwipeTableCell (1.6.11)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - FSCalendar
+  - MGSwipeTableCell
+
+SPEC REPOS:
+  trunk:
+    - DZNEmptyDataSet
+    - FSCalendar
+    - MGSwipeTableCell
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+
+PODFILE CHECKSUM: da1edc29fe834663988c37836cc14d5292488c00
+
+COCOAPODS: 1.9.1

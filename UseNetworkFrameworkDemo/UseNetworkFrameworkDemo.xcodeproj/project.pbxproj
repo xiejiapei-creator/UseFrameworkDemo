@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BA935F89E3E394D55B8B32A /* libPods-UseNetworkFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28646BF958F336464DC600D4 /* libPods-UseNetworkFrameworkDemo.a */; };
+		E97C8F342553922E004EB561 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97C8F332553922E004EB561 /* AppDelegate.m */; };
+		E97C8F3F2553922F004EB561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97C8F3E2553922F004EB561 /* Assets.xcassets */; };
+		E97C8F422553922F004EB561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C8F402553922F004EB561 /* LaunchScreen.storyboard */; };
+		E97C8F452553922F004EB561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97C8F442553922F004EB561 /* main.m */; };
+		E97C8F5225539287004EB561 /* YYModelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97C8F5125539287004EB561 /* YYModelDemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28646BF958F336464DC600D4 /* libPods-UseNetworkFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UseNetworkFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F475DB7A8954A68FA5298F /* Pods-UseNetworkFrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseNetworkFrameworkDemo.release.xcconfig"; path = "Target Support Files/Pods-UseNetworkFrameworkDemo/Pods-UseNetworkFrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E97C8F2F2553922E004EB561 /* UseNetworkFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseNetworkFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97C8F322553922E004EB561 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E97C8F332553922E004EB561 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E97C8F3E2553922F004EB561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E97C8F412553922F004EB561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E97C8F432553922F004EB561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97C8F442553922F004EB561 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E97C8F5025539287004EB561 /* YYModelDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModelDemoViewController.h; sourceTree = "<group>"; };
+		E97C8F5125539287004EB561 /* YYModelDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYModelDemoViewController.m; sourceTree = "<group>"; };
+		F0FED776EE7209D982EB727E /* Pods-UseNetworkFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseNetworkFrameworkDemo.debug.xcconfig"; path = "Target Support Files/Pods-UseNetworkFrameworkDemo/Pods-UseNetworkFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E97C8F2C2553922E004EB561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA935F89E3E394D55B8B32A /* libPods-UseNetworkFrameworkDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4913DFBA8C8782500579FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28646BF958F336464DC600D4 /* libPods-UseNetworkFrameworkDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ED3D8EDF9165BB24C440789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0FED776EE7209D982EB727E /* Pods-UseNetworkFrameworkDemo.debug.xcconfig */,
+				45F475DB7A8954A68FA5298F /* Pods-UseNetworkFrameworkDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E97C8F262553922E004EB561 = {
+			isa = PBXGroup;
+			children = (
+				E97C8F312553922E004EB561 /* UseNetworkFrameworkDemo */,
+				E97C8F302553922E004EB561 /* Products */,
+				9ED3D8EDF9165BB24C440789 /* Pods */,
+				1A4913DFBA8C8782500579FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E97C8F302553922E004EB561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F2F2553922E004EB561 /* UseNetworkFrameworkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E97C8F312553922E004EB561 /* UseNetworkFrameworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F4F25539287004EB561 /* YYModel */,
+				E97C8F4D25539238004EB561 /* SupportingFiles */,
+				E97C8F322553922E004EB561 /* AppDelegate.h */,
+				E97C8F332553922E004EB561 /* AppDelegate.m */,
+				E97C8F3E2553922F004EB561 /* Assets.xcassets */,
+				E97C8F402553922F004EB561 /* LaunchScreen.storyboard */,
+				E97C8F432553922F004EB561 /* Info.plist */,
+				E97C8F442553922F004EB561 /* main.m */,
+			);
+			path = UseNetworkFrameworkDemo;
+			sourceTree = "<group>";
+		};
+		E97C8F4D25539238004EB561 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E97C8F4F25539287004EB561 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F5025539287004EB561 /* YYModelDemoViewController.h */,
+				E97C8F5125539287004EB561 /* YYModelDemoViewController.m */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E97C8F2E2553922E004EB561 /* UseNetworkFrameworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E97C8F482553922F004EB561 /* Build configuration list for PBXNativeTarget "UseNetworkFrameworkDemo" */;
+			buildPhases = (
+				715C260A3581BA67D9838769 /* [CP] Check Pods Manifest.lock */,
+				E97C8F2B2553922E004EB561 /* Sources */,
+				E97C8F2C2553922E004EB561 /* Frameworks */,
+				E97C8F2D2553922E004EB561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UseNetworkFrameworkDemo;
+			productName = UseNetworkFrameworkDemo;
+			productReference = E97C8F2F2553922E004EB561 /* UseNetworkFrameworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E97C8F272553922E004EB561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E97C8F2E2553922E004EB561 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = E97C8F2A2553922E004EB561 /* Build configuration list for PBXProject "UseNetworkFrameworkDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E97C8F262553922E004EB561;
+			productRefGroup = E97C8F302553922E004EB561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E97C8F2E2553922E004EB561 /* UseNetworkFrameworkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E97C8F2D2553922E004EB561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C8F422553922F004EB561 /* LaunchScreen.storyboard in Resources */,
+				E97C8F3F2553922F004EB561 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		715C260A3581BA67D9838769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UseNetworkFrameworkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E97C8F2B2553922E004EB561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C8F342553922E004EB561 /* AppDelegate.m in Sources */,
+				E97C8F452553922F004EB561 /* main.m in Sources */,
+				E97C8F5225539287004EB561 /* YYModelDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E97C8F402553922F004EB561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E97C8F412553922F004EB561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E97C8F462553922F004EB561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E97C8F472553922F004EB561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E97C8F492553922F004EB561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0FED776EE7209D982EB727E /* Pods-UseNetworkFrameworkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UseNetworkFrameworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.UseNetworkFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E97C8F4A2553922F004EB561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F475DB7A8954A68FA5298F /* Pods-UseNetworkFrameworkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UseNetworkFrameworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.UseNetworkFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E97C8F2A2553922E004EB561 /* Build configuration list for PBXProject "UseNetworkFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97C8F462553922F004EB561 /* Debug */,
+				E97C8F472553922F004EB561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E97C8F482553922F004EB561 /* Build configuration list for PBXNativeTarget "UseNetworkFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97C8F492553922F004EB561 /* Debug */,
+				E97C8F4A2553922F004EB561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E97C8F272553922E004EB561 /* Project object */;
+}
