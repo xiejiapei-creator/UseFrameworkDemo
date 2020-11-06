@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FSTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ViewController *rootVC = [[ViewController alloc] init];
+    FSTableViewController *rootVC = [[FSTableViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

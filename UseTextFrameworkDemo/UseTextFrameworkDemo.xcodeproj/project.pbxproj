@@ -56,7 +56,6 @@
 				C1C9DC15C50BFA97CEE477B5 /* Pods-UseTextFrameworkDemo.debug.xcconfig */,
 				ED069A9DA9F42F4958EEAB17 /* Pods-UseTextFrameworkDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

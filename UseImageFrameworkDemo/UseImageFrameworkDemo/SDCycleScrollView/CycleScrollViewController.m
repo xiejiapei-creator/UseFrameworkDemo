@@ -57,10 +57,9 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         cycleScrollView.imageURLStringsGroup = self->_imagesURLStrings;
     });
-    
 }
 
-// 只有文字
+// 本地图片
 - (void)localImage
 {
     SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 650, SCREEN_WIDTH, 300) shouldInfiniteLoop:YES imageNamesGroup:_imageNames];

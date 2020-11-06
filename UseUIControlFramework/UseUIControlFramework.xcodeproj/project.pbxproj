@@ -93,8 +93,34 @@
 				D77A93F4FDB9C822196A3A79 /* Pods-UseUIControlFramework.debug.xcconfig */,
 				584AC867E9768C304753DA4F /* Pods-UseUIControlFramework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E95CEB0E25539FE60063A0C5 /* DIY */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F0B2553916F004EB561 /* DIYViewController.h */,
+				E97C8F052553916F004EB561 /* DIYViewController.m */,
+			);
+			path = DIY;
+			sourceTree = "<group>";
+		};
+		E95CEB192553CD140063A0C5 /* Prev-Next-Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F012553916F004EB561 /* ButtonsViewController.h */,
+				E97C8F0A2553916F004EB561 /* ButtonsViewController.m */,
+			);
+			path = "Prev-Next-Buttons";
+			sourceTree = "<group>";
+		};
+		E95CEB1E2553D05A0063A0C5 /* Hide Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F112553916F004EB561 /* HidePlaceholderViewController.h */,
+				E97C8F072553916F004EB561 /* HidePlaceholderViewController.m */,
+			);
+			path = "Hide Placeholders";
 			sourceTree = "<group>";
 		};
 		E97C8EBE255390B5004EB561 = {
@@ -192,21 +218,16 @@
 		E97C8F002553916F004EB561 /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				E97C8F012553916F004EB561 /* ButtonsViewController.h */,
-				E97C8F022553916F004EB561 /* DelegateAppearanceViewController.m */,
-				E97C8F032553916F004EB561 /* FSTableViewController.m */,
-				E97C8F042553916F004EB561 /* LoadViewViewController.h */,
-				E97C8F052553916F004EB561 /* DIYViewController.m */,
-				E97C8F062553916F004EB561 /* FullScreenViewController.h */,
-				E97C8F072553916F004EB561 /* HidePlaceholderViewController.m */,
 				E97C8F082553916F004EB561 /* FSTableViewController.h */,
-				E97C8F092553916F004EB561 /* DelegateAppearanceViewController.h */,
-				E97C8F0A2553916F004EB561 /* ButtonsViewController.m */,
-				E97C8F0B2553916F004EB561 /* DIYViewController.h */,
-				E97C8F0C2553916F004EB561 /* LoadViewViewController.m */,
+				E97C8F032553916F004EB561 /* FSTableViewController.m */,
+				E9E64A032553FC510067D07F /* Full Screen */,
+				E9E64A012553F3BF0067D07F /* Delegate Appearance */,
+				E95CEB1E2553D05A0063A0C5 /* Hide Placeholders */,
+				E95CEB192553CD140063A0C5 /* Prev-Next-Buttons */,
+				E95CEB0E25539FE60063A0C5 /* DIY */,
 				E97C8F0D2553916F004EB561 /* Range Picker */,
-				E97C8F102553916F004EB561 /* FullScreenViewController.m */,
-				E97C8F112553916F004EB561 /* HidePlaceholderViewController.h */,
+				E97C8F042553916F004EB561 /* LoadViewViewController.h */,
+				E97C8F0C2553916F004EB561 /* LoadViewViewController.m */,
 			);
 			path = FSCalendar;
 			sourceTree = "<group>";
@@ -214,8 +235,8 @@
 		E97C8F0D2553916F004EB561 /* Range Picker */ = {
 			isa = PBXGroup;
 			children = (
-				E97C8F0E2553916F004EB561 /* RangePickerViewController.m */,
 				E97C8F0F2553916F004EB561 /* RangePickerViewController.h */,
+				E97C8F0E2553916F004EB561 /* RangePickerViewController.m */,
 			);
 			path = "Range Picker";
 			sourceTree = "<group>";
@@ -229,6 +250,24 @@
 				E97C8F1F25539177004EB561 /* MailTableCell.h */,
 			);
 			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
+		E9E64A012553F3BF0067D07F /* Delegate Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F092553916F004EB561 /* DelegateAppearanceViewController.h */,
+				E97C8F022553916F004EB561 /* DelegateAppearanceViewController.m */,
+			);
+			path = "Delegate Appearance";
+			sourceTree = "<group>";
+		};
+		E9E64A032553FC510067D07F /* Full Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8F062553916F004EB561 /* FullScreenViewController.h */,
+				E97C8F102553916F004EB561 /* FullScreenViewController.m */,
+			);
+			path = "Full Screen";
 			sourceTree = "<group>";
 		};
 		EE20FAB7EA8261F4E87C1FA6 /* Frameworks */ = {

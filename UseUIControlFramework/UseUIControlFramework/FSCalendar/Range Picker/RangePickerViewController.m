@@ -68,6 +68,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Range Picker Calendar";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self createSubview];
 }
