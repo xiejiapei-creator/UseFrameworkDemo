@@ -29,6 +29,10 @@
 		E97C8F192553916F004EB561 /* FullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97C8F102553916F004EB561 /* FullScreenViewController.m */; };
 		E97C8F2025539177004EB561 /* MailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97C8F1D25539177004EB561 /* MailTableCell.m */; };
 		E97C8F2125539177004EB561 /* MailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97C8F1E25539177004EB561 /* MailViewController.m */; };
+		E9E64A8725553F8A0067D07F /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E64A8625553F8A0067D07F /* ToastViewController.m */; };
+		E9E64A9125554DF20067D07F /* luckcoffee.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E9E64A9025554DF20067D07F /* luckcoffee.JPG */; };
+		E9E64A97255551C30067D07F /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E64A96255551C30067D07F /* MBProgressHUDViewController.m */; };
+		E9E64AA8255557CE0067D07F /* zhPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E64AA7255557CE0067D07F /* zhPopupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,13 @@
 		E97C8F1D25539177004EB561 /* MailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTableCell.m; sourceTree = "<group>"; };
 		E97C8F1E25539177004EB561 /* MailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailViewController.m; sourceTree = "<group>"; };
 		E97C8F1F25539177004EB561 /* MailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTableCell.h; sourceTree = "<group>"; };
+		E9E64A8525553F8A0067D07F /* ToastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastViewController.h; sourceTree = "<group>"; };
+		E9E64A8625553F8A0067D07F /* ToastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
+		E9E64A9025554DF20067D07F /* luckcoffee.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = luckcoffee.JPG; sourceTree = "<group>"; };
+		E9E64A95255551C30067D07F /* MBProgressHUDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDViewController.h; sourceTree = "<group>"; };
+		E9E64A96255551C30067D07F /* MBProgressHUDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDViewController.m; sourceTree = "<group>"; };
+		E9E64AA6255557CE0067D07F /* zhPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zhPopupViewController.h; sourceTree = "<group>"; };
+		E9E64AA7255557CE0067D07F /* zhPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhPopupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +155,9 @@
 		E97C8EC9255390B5004EB561 /* UseUIControlFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E9E64AA5255557B60067D07F /* zhPopupController */,
+				E9E64A94255551A70067D07F /* MBProgressHUD */,
+				E9E64A8425553F7D0067D07F /* Toast */,
 				E97C8F1B25539177004EB561 /* MGSwipeTableCell */,
 				E97C8F002553916F004EB561 /* FSCalendar */,
 				E97C8EE825539168004EB561 /* EmptyDataSet */,
@@ -156,6 +170,7 @@
 		E97C8EE5255390D0004EB561 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E9E64A9025554DF20067D07F /* luckcoffee.JPG */,
 				E97C8EDC255390B5004EB561 /* main.m */,
 				E97C8ECA255390B5004EB561 /* AppDelegate.h */,
 				E97C8ECB255390B5004EB561 /* AppDelegate.m */,
@@ -270,6 +285,33 @@
 			path = "Full Screen";
 			sourceTree = "<group>";
 		};
+		E9E64A8425553F7D0067D07F /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E9E64A8525553F8A0067D07F /* ToastViewController.h */,
+				E9E64A8625553F8A0067D07F /* ToastViewController.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		E9E64A94255551A70067D07F /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E9E64A95255551C30067D07F /* MBProgressHUDViewController.h */,
+				E9E64A96255551C30067D07F /* MBProgressHUDViewController.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E9E64AA5255557B60067D07F /* zhPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				E9E64AA6255557CE0067D07F /* zhPopupViewController.h */,
+				E9E64AA7255557CE0067D07F /* zhPopupViewController.m */,
+			);
+			path = zhPopupController;
+			sourceTree = "<group>";
+		};
 		EE20FAB7EA8261F4E87C1FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +381,7 @@
 				E97C8EF925539168004EB561 /* applications.json in Resources */,
 				E97C8EFB25539168004EB561 /* Lato-Regular.ttf in Resources */,
 				E97C8ED7255390B5004EB561 /* Assets.xcassets in Resources */,
+				E9E64A9125554DF20067D07F /* luckcoffee.JPG in Resources */,
 				E97C8EFA25539168004EB561 /* IdealSans-Book-Pro.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E64A8725553F8A0067D07F /* ToastViewController.m in Sources */,
 				E97C8F122553916F004EB561 /* DelegateAppearanceViewController.m in Sources */,
 				E97C8F2125539177004EB561 /* MailViewController.m in Sources */,
 				E97C8F142553916F004EB561 /* DIYViewController.m in Sources */,
@@ -382,6 +426,8 @@
 				E97C8ECC255390B5004EB561 /* AppDelegate.m in Sources */,
 				E97C8F192553916F004EB561 /* FullScreenViewController.m in Sources */,
 				E97C8F182553916F004EB561 /* RangePickerViewController.m in Sources */,
+				E9E64A97255551C30067D07F /* MBProgressHUDViewController.m in Sources */,
+				E9E64AA8255557CE0067D07F /* zhPopupViewController.m in Sources */,
 				E97C8F132553916F004EB561 /* FSTableViewController.m in Sources */,
 				E97C8F162553916F004EB561 /* ButtonsViewController.m in Sources */,
 				E97C8F172553916F004EB561 /* LoadViewViewController.m in Sources */,

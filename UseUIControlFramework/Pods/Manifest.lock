@@ -1,24 +1,32 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
   - FSCalendar (2.8.1)
+  - MBProgressHUD (1.2.0)
   - MGSwipeTableCell (1.6.11)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - DZNEmptyDataSet
   - FSCalendar
+  - MBProgressHUD
   - MGSwipeTableCell
+  - Toast
 
 SPEC REPOS:
   trunk:
     - DZNEmptyDataSet
     - FSCalendar
+    - MBProgressHUD
     - MGSwipeTableCell
+    - Toast
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: da1edc29fe834663988c37836cc14d5292488c00
+PODFILE CHECKSUM: 83eb87e9118e185a80489f8b1f1838a65c65e639
 
 COCOAPODS: 1.9.1

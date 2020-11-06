@@ -6,6 +6,7 @@ target 'UseUIControlFramework' do
 pod 'DZNEmptyDataSet'
 pod 'MGSwipeTableCell'
 pod 'FSCalendar'
-
+pod 'Toast'
+pod 'MBProgressHUD'
 
 end

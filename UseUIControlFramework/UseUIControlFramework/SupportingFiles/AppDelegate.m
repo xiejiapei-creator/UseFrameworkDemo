@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import "FSTableViewController.h"
+#import "ToastViewController.h"
+#import "MBProgressHUDViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    FSTableViewController *rootVC = [[FSTableViewController alloc] init];
+    MBProgressHUDViewController *rootVC = [[MBProgressHUDViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
