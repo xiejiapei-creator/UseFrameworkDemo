@@ -4,6 +4,7 @@
 target 'UseImageFrameworkDemo' do
 
 pod 'SDWebImage'
+pod 'SDCycleScrollView'
 
 
 end

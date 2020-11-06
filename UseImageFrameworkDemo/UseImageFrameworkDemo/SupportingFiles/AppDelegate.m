@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CycleScrollViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ViewController *rootVC = [[ViewController alloc] init];
+    CycleScrollViewController *rootVC = [[CycleScrollViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
