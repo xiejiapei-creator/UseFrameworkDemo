@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface zhPopupViewController : UIViewController
+@interface zhPopupViewController: UIViewController
 
 @end
 

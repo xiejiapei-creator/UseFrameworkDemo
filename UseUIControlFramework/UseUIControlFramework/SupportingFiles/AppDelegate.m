@@ -9,6 +9,7 @@
 #import "FSTableViewController.h"
 #import "ToastViewController.h"
 #import "MBProgressHUDViewController.h"
+#import "zhRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    MBProgressHUDViewController *rootVC = [[MBProgressHUDViewController alloc] init];
+    zhRootViewController *rootVC = [[zhRootViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

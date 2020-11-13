@@ -8,5 +8,7 @@ pod 'MGSwipeTableCell'
 pod 'FSCalendar'
 pod 'Toast'
 pod 'MBProgressHUD'
+pod 'zhPopupController'
+pod 'Masonry'
 
 end
