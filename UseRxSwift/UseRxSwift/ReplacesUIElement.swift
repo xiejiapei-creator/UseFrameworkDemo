@@ -12,7 +12,7 @@ import RxSwift
 fileprivate let minUsernameLength = 5
 fileprivate let minPasswordLength = 6
 
-class ReplacesUIElement: UIViewController
+class ReplacesUIElement: UIViewController, UIScrollViewDelegate
 {
     var disposeBag = DisposeBag()
     var button: UIButton = UIButton(frame: CGRect(x: 130, y: 200, width: 200, height: 50));
@@ -30,6 +30,13 @@ class ReplacesUIElement: UIViewController
     var passwordValidLabel: UILabel! = UILabel(frame: CGRect(x: 50, y: 420, width: 300, height: 50))
     var loginBtn: UIButton! = UIButton(frame: CGRect(x: 100, y: 550, width: 200, height: 50))
     
+    var timeLabel: UILabel! = UILabel(frame: CGRect(x: 150, y: 200, width: 300, height: 100))
+    var countLable: UILabel!
+    var tableView: UITableView!
+    var playButton: UIButton! = UIButton(frame: CGRect(x: 100, y: 320, width: 50, height: 50))
+    var splitUpButton: UIButton! = UIButton(frame: CGRect(x: 180, y: 320, width: 100, height: 50))
+    var stopButton: UIButton! = UIButton(frame: CGRect(x: 300, y: 320, width: 50, height: 50))
+    
     
     override func viewDidLoad()
     {
@@ -45,7 +52,7 @@ class ReplacesUIElement: UIViewController
         //setupTextFiled()
         
         // 使用RxSwift来控制scrollView滚动效果
-        setupScrollerView()
+        //setupScrollerView()
         
         // 使用RxSwift来控制手势响应
         //setupGestureRecognizer()
@@ -57,7 +64,7 @@ class ReplacesUIElement: UIViewController
         //setupTraditionTimer()
         
         // 使用RxSwift来控制timer定时器
-        setupTimer()
+        //setupTimer()
         
         // 传统的网络请求方式
         //traditionNetwork()
@@ -69,6 +76,10 @@ class ReplacesUIElement: UIViewController
         //createButtonEnableSubview()
         // 使用RxSwift来控制按钮是否可以点击
         //setupButtonEnable()
+        
+        // 使用RxSwift来控制Table视图
+        createTableView()
+        setUpTableView()
     }
 
     func setupButton()
@@ -257,6 +268,122 @@ class ReplacesUIElement: UIViewController
             print("源代码分析好恶心，头都绕晕了")
         }).disposed(by: disposeBag)
     }
+    
+    func setUpTableView()
+    {
+        var timer: Observable<Int>!
+        
+        // 正在运行
+        let isRunning = Observable
+            .merge([playButton.rx.tap.map({ return true }), stopButton.rx.tap.map({ return false })])
+            .startWith(false)
+            .share(replay: 1, scope: .whileConnected)
+        
+        // 打印是否正在运行
+        isRunning
+            .subscribe(onNext: { print($0) })
+            .disposed(by: disposeBag)
+        
+        // 正在运行序列和停止按钮是否能够点击进行绑定
+        isRunning
+            .bind(to: stopButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
+        // 没有运行
+        let isNotRunning = isRunning
+            .map({ running -> Bool in
+                    print(running)
+                    return !running })
+            .share(replay: 1, scope: .whileConnected)
+       
+        // 将没有运行和运行按钮能够点击事件绑定，和割裂按钮隐藏事件绑定
+        isNotRunning
+            .bind(to: splitUpButton.rx.isHidden)
+            .disposed(by: disposeBag)
+        isNotRunning
+            .bind(to: playButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
+        // 创建计时器
+        timer = Observable<Int>
+            .interval(DispatchTimeInterval.milliseconds(100), scheduler: MainScheduler.instance)
+            .withLatestFrom(isRunning, resultSelector: {_, running in running})
+            .filter({running in running})
+            .scan(0, accumulator: {(acc, _) in
+                return acc+1
+            })
+            .startWith(0)
+            .share(replay: 1, scope: .whileConnected)
+        
+        // 打印计时器中的时间
+        timer
+            .subscribe { (milliseconds) in print("\(milliseconds)00ms") }
+            .disposed(by: disposeBag)
+        
+        // 将格式化后的日期展示到Label上
+        timer.map(stringFromTimeInterval)
+            .bind(to: timeLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        // 以计时器的当前时间为准割开作为片段
+        let lapsSequence = timer
+            .sample(splitUpButton.rx.tap)
+            .map(stringFromTimeInterval)
+            .scan([String](), accumulator: { lapTimes, newTime in
+                return lapTimes + [newTime]
+            })
+            .share(replay: 1, scope: .whileConnected)
+        
+        // 将割开的片段展示到Table中
+        lapsSequence
+            .bind(to: tableView.rx.items (cellIdentifier: "Cell", cellType: UITableViewCell.self))
+            { (row, element, cell) in
+                cell.textLabel?.text = "\(row+1)) \(element)"
+            }
+            .disposed(by: disposeBag)
+        
+        // 设置tableview的delegate
+        tableView
+            .rx.setDelegate(self)
+            .disposed(by: disposeBag)
+        
+        // 更新Tableview的headview里面的计数
+        lapsSequence.map({ laps -> String in
+            return "\t\(laps.count) laps"
+        })
+            .startWith("\tno laps")
+            .bind(to: countLable.rx.text)
+            .disposed(by: disposeBag)
+        
+    }
+    
+    func createTableView()
+    {
+        view.backgroundColor = .white
+        countLable = UILabel(frame: CGRect(x: 0, y: 400, width: view.frame.size.width, height: 80))
+        countLable.backgroundColor = UIColor(white: 0.85, alpha: 1.0)
+        tableView = UITableView(frame: CGRect(x: 0, y: 500, width: view.frame.size.width, height: 300))
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        playButton.setTitle("▷", for: .normal)
+        playButton.setTitleColor(.blue, for: .normal)
+        playButton.titleLabel!.font = UIFont.systemFont(ofSize: 24)
+        playButton.backgroundColor = .orange
+        stopButton.setTitle("◻", for: .normal)
+        stopButton.setTitleColor(.gray, for: .normal)
+        stopButton.titleLabel!.font = UIFont.systemFont(ofSize: 24)
+        stopButton.backgroundColor = .red
+        splitUpButton.setTitle("Split Lap", for: .normal)
+        splitUpButton.setTitleColor(.blue, for: .normal)
+        splitUpButton.titleLabel!.font = UIFont.systemFont(ofSize: 24)
+        splitUpButton.backgroundColor = .brown
+        timeLabel.font = UIFont.systemFont(ofSize: 50)
+        view .addSubview(tableView)
+        view .addSubview(playButton)
+        view .addSubview(splitUpButton)
+        view .addSubview(stopButton)
+        view .addSubview(timeLabel)
+        view .addSubview(countLable)
+    }
 }
 
 
@@ -275,6 +402,21 @@ extension ReplacesUIElement: UITextFieldDelegate
     }
 }
 
- 
+func stringFromTimeInterval(_ ms: NSInteger) -> String
+{
+    return String(format: "%0.2d:%0.2d.%0.1d",arguments: [(ms / 600) % 600, (ms % 600 ) / 10, ms % 10])
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
