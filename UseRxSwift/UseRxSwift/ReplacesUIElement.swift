@@ -14,12 +14,15 @@ fileprivate let minPasswordLength = 6
 
 class ReplacesUIElement: UIViewController
 {
-    let disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
     var button: UIButton = UIButton(frame: CGRect(x: 130, y: 200, width: 200, height: 50));
     var textFiled: UITextField = UITextField(frame: CGRect(x: 130, y: 300, width: 200, height: 50))
     var scrollView: UIScrollView = UIScrollView(frame: CGRect(x: 130, y: 400, width: 200, height: 300))
     var label: UILabel = UILabel(frame: CGRect(x: 130, y: 620, width: 200, height: 50))
     var timer: Observable<Int>!
+    var traditionTimer = Timer()
+    var gcdTimer: DispatchSourceTimer!
+    var displayLink: CADisplayLink!
     
     var usernameTextFiled: UITextField! = UITextField(frame: CGRect(x: 50, y: 150, width: 300, height: 50))
     var usernameValidLabel: UILabel! = UILabel(frame: CGRect(x: 50, y: 220, width: 200, height: 50))
@@ -42,7 +45,7 @@ class ReplacesUIElement: UIViewController
         //setupTextFiled()
         
         // 使用RxSwift来控制scrollView滚动效果
-        //setupScrollerView()
+        setupScrollerView()
         
         // 使用RxSwift来控制手势响应
         //setupGestureRecognizer()
@@ -50,8 +53,11 @@ class ReplacesUIElement: UIViewController
         // 使用RxSwift来控制通知事件
         //setupNotification()
         
+        // 传统控制定时器的方式
+        //setupTraditionTimer()
+        
         // 使用RxSwift来控制timer定时器
-        //setupTimer()
+        setupTimer()
         
         // 传统的网络请求方式
         //traditionNetwork()
@@ -60,9 +66,9 @@ class ReplacesUIElement: UIViewController
         //setupNextwork()
         
         // 创建按钮是否可以点击视图
-        createButtonEnableSubview()
+        //createButtonEnableSubview()
         // 使用RxSwift来控制按钮是否可以点击
-        setupButtonEnable()
+        //setupButtonEnable()
     }
 
     func setupButton()
@@ -105,7 +111,7 @@ class ReplacesUIElement: UIViewController
         scrollView.rx.contentOffset
             .subscribe(onNext: { [weak self] (content) in
                 self?.view.backgroundColor = UIColor.init(red: content.y/255.0*0.8, green: content.y/255.0*0.3, blue: content.y/255.0*0.6, alpha: 1.0)
-                print(content.y)
+                //print(content.y)
             })
             .disposed(by: disposeBag)
     }
@@ -130,11 +136,61 @@ class ReplacesUIElement: UIViewController
             .disposed(by: disposeBag)
     }
     
+    func setupTraditionTimer()
+    {
+        // 方案一
+        self.traditionTimer = Timer.init(timeInterval: 1, target: self, selector: #selector(timerFire), userInfo: nil, repeats: true)
+        // 只会打印一次
+        //self.traditionTimer.fire()
+        
+        // 会打印多次，但是和滚动视图冲突，在滚动时计时器停止
+        RunLoop.current.add(self.traditionTimer, forMode: .default)
+        
+        // 会打印多次，在滚动时计时器继续运行
+        RunLoop.current.add(self.traditionTimer, forMode: .common)
+
+        // 方案二
+        // 会打印多次，但是和滚动视图冲突，在滚动时计时器停止
+        self.traditionTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+            print("喝点小酒")
+        })
+
+        // 方案三
+        // 会打印多次，在滚动时计时器继续运行
+        gcdTimer = DispatchSource.makeTimerSource()
+        gcdTimer.schedule(deadline: DispatchTime.now(), repeating: DispatchTimeInterval.seconds(1))
+        gcdTimer.setEventHandler {
+            print("脑袋晕晕的")
+        }
+        gcdTimer.resume()// 开始
+        gcdTimer.suspend()// 暂停
+        gcdTimer.cancel()// 取消
+        gcdTimer = nil// 销毁
+
+        // 方案四
+        // 会打印多次，但是和滚动视图冲突，在滚动时计时器停止
+        displayLink = CADisplayLink(target: self, selector: #selector(timerFire))
+        displayLink.preferredFramesPerSecond = 1
+        displayLink.add(to: .current, forMode: .default)
+        displayLink.isPaused = true // 暂停
+    }
+    
+    @objc func timerFire()
+    {
+        print("漫游在云海的鲸鱼")
+    }
+    
     func setupTimer()
     {
         timer = Observable<Int>.interval(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
         timer.subscribe(onNext: { num in print("下雪了❄️")})
             .disposed(by: disposeBag)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        // 旧的垃圾袋里面含有计时器，所以计时器也同时被销毁掉了
+        self.disposeBag = DisposeBag()
     }
     
     func traditionNetwork()
@@ -220,7 +276,5 @@ extension ReplacesUIElement: UITextFieldDelegate
 }
 
  
-
-
 
 

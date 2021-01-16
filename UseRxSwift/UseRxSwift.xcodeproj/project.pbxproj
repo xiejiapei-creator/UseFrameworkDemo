@@ -15,6 +15,8 @@
 		E90C2DD125AEDE6500D55844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90C2DCF25AEDE6500D55844 /* LaunchScreen.storyboard */; };
 		E90C2DDC25AEDE8300D55844 /* FunctionalResponsiveProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C2DDB25AEDE8300D55844 /* FunctionalResponsiveProgramming.swift */; };
 		E90C2DE525AEF4DB00D55844 /* ReplacesUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C2DE425AEF4DB00D55844 /* ReplacesUIElement.swift */; };
+		E97DB3B925B1916A00B08BF6 /* ObservableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DB3B825B1916A00B08BF6 /* ObservableSequence.swift */; };
+		E9DB41B025B1D1EF008DE9C2 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41AF25B1D1EF008DE9C2 /* UserPreferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E90C2DD225AEDE6500D55844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90C2DDB25AEDE8300D55844 /* FunctionalResponsiveProgramming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalResponsiveProgramming.swift; sourceTree = "<group>"; };
 		E90C2DE425AEF4DB00D55844 /* ReplacesUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplacesUIElement.swift; sourceTree = "<group>"; };
+		E97DB3B825B1916A00B08BF6 /* ObservableSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSequence.swift; sourceTree = "<group>"; };
+		E9DB41AF25B1D1EF008DE9C2 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			children = (
 				E90C2DE425AEF4DB00D55844 /* ReplacesUIElement.swift */,
 				E90C2DDB25AEDE8300D55844 /* FunctionalResponsiveProgramming.swift */,
+				E97DB3B825B1916A00B08BF6 /* ObservableSequence.swift */,
+				E9DB41AF25B1D1EF008DE9C2 /* UserPreferences.swift */,
 				E90C2DD925AEDE6900D55844 /* SupportingFiles */,
 				E90C2DD225AEDE6500D55844 /* Info.plist */,
 			);
@@ -216,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97DB3B925B1916A00B08BF6 /* ObservableSequence.swift in Sources */,
+				E9DB41B025B1D1EF008DE9C2 /* UserPreferences.swift in Sources */,
 				E90C2DDC25AEDE8300D55844 /* FunctionalResponsiveProgramming.swift in Sources */,
 				E90C2DE525AEF4DB00D55844 /* ReplacesUIElement.swift in Sources */,
 				E90C2DC525AEDE6300D55844 /* AppDelegate.swift in Sources */,
