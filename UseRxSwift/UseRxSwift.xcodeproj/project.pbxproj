@@ -19,6 +19,12 @@
 		E97DB40F25B574D500B08BF6 /* ReplacesUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DB40B25B574D500B08BF6 /* ReplacesUIElement.swift */; };
 		E97DB41025B574D500B08BF6 /* FunctionalResponsiveProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DB40C25B574D500B08BF6 /* FunctionalResponsiveProgramming.swift */; };
 		E97DB41825B5752A00B08BF6 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DB41725B5752A00B08BF6 /* Subject.swift */; };
+		E9DB41E025B5B28A008DE9C2 /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41DF25B5B28A008DE9C2 /* SubjectCell.swift */; };
+		E9DB41E325B5B3B8008DE9C2 /* SubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41E225B5B3B8008DE9C2 /* SubjectModel.swift */; };
+		E9DB41E625B5B493008DE9C2 /* SubjectCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41E525B5B493008DE9C2 /* SubjectCacheManager.swift */; };
+		E9DB41E925B5B648008DE9C2 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41E825B5B648008DE9C2 /* SubjectViewController.swift */; };
+		E9DB41EC25B5B66E008DE9C2 /* NotUseSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41EB25B5B66E008DE9C2 /* NotUseSubjectViewController.swift */; };
+		E9DB41FF25B5C4FC008DE9C2 /* SubjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB41FE25B5C4FC008DE9C2 /* SubjectDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		E97DB40B25B574D500B08BF6 /* ReplacesUIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplacesUIElement.swift; sourceTree = "<group>"; };
 		E97DB40C25B574D500B08BF6 /* FunctionalResponsiveProgramming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalResponsiveProgramming.swift; sourceTree = "<group>"; };
 		E97DB41725B5752A00B08BF6 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		E9DB41DF25B5B28A008DE9C2 /* SubjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
+		E9DB41E225B5B3B8008DE9C2 /* SubjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModel.swift; sourceTree = "<group>"; };
+		E9DB41E525B5B493008DE9C2 /* SubjectCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCacheManager.swift; sourceTree = "<group>"; };
+		E9DB41E825B5B648008DE9C2 /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		E9DB41EB25B5B66E008DE9C2 /* NotUseSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotUseSubjectViewController.swift; sourceTree = "<group>"; };
+		E9DB41FE25B5C4FC008DE9C2 /* SubjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 		E97DB3F225B574B400B08BF6 /* UseRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E9DB41DD25B5B15F008DE9C2 /* Subject实战 */,
 				E97DB40C25B574D500B08BF6 /* FunctionalResponsiveProgramming.swift */,
 				E97DB40925B574D400B08BF6 /* ObservableSequence.swift */,
 				E97DB40B25B574D500B08BF6 /* ReplacesUIElement.swift */,
@@ -112,6 +125,19 @@
 				E97DB3FE25B574B500B08BF6 /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E9DB41DD25B5B15F008DE9C2 /* Subject实战 */ = {
+			isa = PBXGroup;
+			children = (
+				E9DB41DF25B5B28A008DE9C2 /* SubjectCell.swift */,
+				E9DB41E225B5B3B8008DE9C2 /* SubjectModel.swift */,
+				E9DB41E525B5B493008DE9C2 /* SubjectCacheManager.swift */,
+				E9DB41E825B5B648008DE9C2 /* SubjectViewController.swift */,
+				E9DB41EB25B5B66E008DE9C2 /* NotUseSubjectViewController.swift */,
+				E9DB41FE25B5C4FC008DE9C2 /* SubjectDetailViewController.swift */,
+			);
+			path = "Subject实战";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,10 +255,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97DB41825B5752A00B08BF6 /* Subject.swift in Sources */,
+				E9DB41E925B5B648008DE9C2 /* SubjectViewController.swift in Sources */,
+				E9DB41E625B5B493008DE9C2 /* SubjectCacheManager.swift in Sources */,
+				E9DB41EC25B5B66E008DE9C2 /* NotUseSubjectViewController.swift in Sources */,
 				E97DB40E25B574D500B08BF6 /* UserPreferences.swift in Sources */,
 				E97DB3F825B574B400B08BF6 /* ViewController.swift in Sources */,
+				E9DB41E025B5B28A008DE9C2 /* SubjectCell.swift in Sources */,
 				E97DB40D25B574D500B08BF6 /* ObservableSequence.swift in Sources */,
 				E97DB40F25B574D500B08BF6 /* ReplacesUIElement.swift in Sources */,
+				E9DB41E325B5B3B8008DE9C2 /* SubjectModel.swift in Sources */,
+				E9DB41FF25B5C4FC008DE9C2 /* SubjectDetailViewController.swift in Sources */,
 				E97DB3F425B574B400B08BF6 /* AppDelegate.swift in Sources */,
 				E97DB3F625B574B400B08BF6 /* SceneDelegate.swift in Sources */,
 				E97DB41025B574D500B08BF6 /* FunctionalResponsiveProgramming.swift in Sources */,

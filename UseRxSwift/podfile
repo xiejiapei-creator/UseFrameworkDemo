@@ -2,4 +2,6 @@ target 'UseRxSwift' do
   use_frameworks!
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SnapKit'
+  pod 'WCDB.swift'
 end
