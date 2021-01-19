@@ -10,12 +10,12 @@ import WCDBSwift
 
 class SubjectModel: TableCodable
 {
-    var tittle: String = ""
+    var title: String = ""
     var isFinished: Bool = false
     
-    init(tittle: String, isFinished: Bool)
+    init(title: String, isFinished: Bool)
     {
-        self.tittle = tittle
+        self.title = title
         self.isFinished = isFinished
     }
     
@@ -29,7 +29,7 @@ class SubjectModel: TableCodable
     {
         typealias Root = SubjectModel
         static let objectRelationalMapping = TableBinding(CodingKeys.self)
-        case tittle
+        case title
         case isFinished
     }
 }

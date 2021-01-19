@@ -42,7 +42,7 @@ class SubjectCell: UITableViewCell
     {
         
         self.contentView.addSubview(statusLabel)
-        self.contentView.addSubview(tittleLabel)
+        self.contentView.addSubview(titleLabel)
         
         let leftMargin = 20;
         
@@ -60,9 +60,9 @@ class SubjectCell: UITableViewCell
     }
     
     // 根据Model的变化更新UI
-    func upDataUIWithModle(model:Model)
+    func upDataUIWithModle(model:SubjectModel)
     {
-        self.tittleLabel.text = model.tittle
+        self.titleLabel.text = model.title
         if model.isFinished
         {
             self.statusLabel.text = "✅"

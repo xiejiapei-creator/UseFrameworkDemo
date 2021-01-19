@@ -69,7 +69,7 @@ class NotUseSubjectViewController: UIViewController
         setupUI()
         
         // 从数据库中获取到所有数据
-        modelItems = SubjectCacheManager.manager.fetachSubjectModelData()
+        modelItems = SubjectCacheManager.manager.fetachModelData()
     }
     
 
@@ -88,15 +88,17 @@ class NotUseSubjectViewController: UIViewController
     {
         // 新行的index
         let newRowIndex = modelItems.count
+        // 创建新行的数据
+        let model = SubjectModel(title:"多喝牛奶可以长高哦：\(Date().timeIntervalSince1970)", isFinished: false)
+        // 将新行的数据添加到数据列表中
+        // 必需先提供了数据才能添加cell
+        modelItems.append(model)
+        
         // 将index转化为IndexPath
         let indexPath = IndexPath(row: newRowIndex, section: 0)
         // 根据IndexPath在table中插入新行
         tableView.insertRows(at: [indexPath], with: .automatic)
         
-        // 创建新行的数据
-        let model = SubjectModel(title:"多喝牛奶可以长高哦：\(Date().timeIntervalSince1970)", isFinished: false)
-        // 将新行的数据添加到数据列表中
-        modelItems.append(model)
         // 将新行的数据添加到数据库中
         SubjectCacheManager.manager.insertModelToTable(models: [model])
     }
@@ -124,7 +126,7 @@ extension NotUseSubjectViewController: UITableViewDelegate
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
     {
         // 从数据库中删除数据
-        SubjectCacheManager.manager.deleteSubjectModelData(model: modelItems[indexPath.row])
+        SubjectCacheManager.manager.deleteModelData(model: modelItems[indexPath.row])
         
         // 从数据列中删除数据
         modelItems.remove(at: indexPath.row)
@@ -142,12 +144,12 @@ extension NotUseSubjectViewController: UITableViewDelegate
         // 将是否完成状态进行反转
         model.toggleFinished()
         // 将完成状态反转后到model更新到数据库中
-        SubjectCacheManager.manager.updataSubjectModelData(model: model)
+        SubjectCacheManager.manager.updataModelData(model: model)
         // 刷新table中状态反转的cell
         tableView.reloadRows(at: [indexPath], with: .fade)
         
         // 获取数据库中的所有数据打印出来
-        let array = SubjectCacheManager.manager.fetachSubjectModelData()
+        let array = SubjectCacheManager.manager.fetachModelData()
         for item in array
         {
             print("\(item.title) --- \(item.isFinished)")

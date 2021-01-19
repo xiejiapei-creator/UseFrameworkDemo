@@ -51,7 +51,7 @@ class SubjectCacheManager: NSObject
     {
         do
         {
-            try database.update(table: tableName, on: SubjectModel.Properties.isFinished, with: model, where: SubjectModel.Properties.title == model.tittle)
+            try database.update(table: tableName, on: SubjectModel.Properties.isFinished, with: model, where: SubjectModel.Properties.title == model.title)
         }
         catch
         {
@@ -75,7 +75,7 @@ class SubjectCacheManager: NSObject
     /// 查找数据
     func fetachModelData() -> [SubjectModel]
     {
-        var objects = [Model]()
+        var objects = [SubjectModel]()
         do
         {
             objects = try database.getObjects(fromTable: tableName)

@@ -8,28 +8,6 @@
 import UIKit
 import RxSwift
 
-// 底部的安全距离
-let bottomSafeAreaHeight =  UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0.0
-// 顶部的安全距离
-let topSafeAreaHeight = CGFloat(bottomSafeAreaHeight == 0 ? 0 : 24)
-// 状态栏高度
-let statusBarHeight = UIApplication.shared.statusBarFrame.height;
-// 导航栏高度
-let navigationHeight = CGFloat(bottomSafeAreaHeight == 0 ? 64 : 88)
-// tabbar高度
-let tabBarHeight = CGFloat(bottomSafeAreaHeight + 49)
-// 屏幕宽度
-let kScreenWidth = UIScreen.main.bounds.width
-// 屏幕高度
-let kScreenHeight = UIScreen.main.bounds.height
-// 底部视图高度
-let bottomViewHeight = CGFloat(124)
-// 底部按钮的大小
-let buttonSize = CGFloat(64)
-// 底部按钮布局空隙
-let buttonMargin = CGFloat(36)
-
-
 class SubjectViewController: UIViewController
 {
     let resuseID = "SubjectViewController"
@@ -69,12 +47,12 @@ class SubjectViewController: UIViewController
         setupUI()
         
         // 将从数据库中获取到的所有数据作为modelsSubject的初始值
-        modelsSubject = BehaviorSubject(value: SubjectCacheManager.manager.fetachLGModelData())
+        modelsSubject = BehaviorSubject(value: SubjectCacheManager.manager.fetachModelData())
         modelsSubject?.subscribe(onNext:
         { [weak self](items) in
             self?.modelItems = items// 将获取的所有数据赋值给列表
             self?.tableView.reloadData()// 刷新表视图
-            self?.deleteBtn.isEnabled = !items.isEmpty// items非空的话删除按钮便可点击
+            self?.deleteButton.isEnabled = !items.isEmpty// items非空的话删除按钮便可点击
             SubjectCacheManager.manager.updataAllData(models: items)// 根据items更新数据库
             
             // 列表中没有完成的待办事项的数量
@@ -103,17 +81,17 @@ class SubjectViewController: UIViewController
     
     @objc func didClickAddAction()
     {
-        let newRowIndex = modelItems.count
-        let indexPath = IndexPath(row: newRowIndex, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
-        
-        let model = SubjectModel(title:"多喝牛奶可以长高哦：\(Date().timeIntervalSince1970)", isFinished: false)
-        modelItems.append(model)
-        // 将添加新行后的列表作为信号发送出去
-        modelsSubject?.onNext(modelItems)
-        
+//        let newRowIndex = modelItems.count
+//        let indexPath = IndexPath(row: newRowIndex, section: 0)
+//        let model = SubjectModel(title:"多喝牛奶可以长高哦：\(Date().timeIntervalSince1970)", isFinished: false)
+//        modelItems.append(model)
+//        tableView.insertRows(at: [indexPath], with: .automatic)
+//
+//        // 将添加新行后的列表作为信号发送出去
+//        modelsSubject?.onNext(modelItems)
+
         // 进入详情界面添加cell
-        //pushToDetailVC(model: nil)
+        pushToDetailVC(model: nil)
     }
     
     fileprivate func pushToDetailVC(model:SubjectModel?)
@@ -121,17 +99,17 @@ class SubjectViewController: UIViewController
         let detailVC = SubjectDetailViewController.init()
         if let model = model
         {
-            detailVC?.model = model
+            detailVC.model = model
         }
         
         // 订阅信号后在回调闭包中更新UI
-        detailVC?.todoOB.subscribe(onNext:
+        detailVC.todoObservable.subscribe(onNext:
         { [weak self](model) in
             self?.modelItems.append(model)
             self?.modelsSubject?.onNext(self?.modelItems ?? [])
         }).disposed(by: disposeBag)
         
-        self.navigationController?.pushViewController(detailVC!, animated: true)
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
 }
@@ -166,19 +144,12 @@ extension SubjectViewController: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let model = modelItems[indexPath.row]
-        
-        // 将完成状态反转后的列表作为信号发送出去
-        model.toggleFinished()
-        modelsSubject?.onNext(modelItems)
+//
+//        // 将完成状态反转后的列表作为信号发送出去
+//        model.toggleFinished()
+//        modelsSubject?.onNext(modelItems)
         
         // 进入详情界面修改cell
-        //pushToDetailVC(model: model)
+        pushToDetailVC(model: model)
     }
 }
-
-
-
-
-
-
-

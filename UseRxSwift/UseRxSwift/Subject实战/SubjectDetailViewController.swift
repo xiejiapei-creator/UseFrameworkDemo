@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift 
 
 class SubjectDetailViewController: UIViewController
 {
-    var todoNameTextField: UITextField! = UITextField(frame: CGRect(x: 20, y: 200, width: 200, height: 50))
-    var isFinishedSwitch: UISwitch! = UISwitch(frame: CGRect(x: 300, y: 400, width: 50, height: 50))
+    var todoNameTextField: UITextField! = UITextField(frame: CGRect(x: 20, y: 150, width: 200, height: 50))
+    var isFinishedSwitch: UISwitch! = UISwitch(frame: CGRect(x: 20, y: 300, width: 150, height: 50))
     var done: Bool = false
     var model: SubjectModel!
     let disposeBag = DisposeBag()
@@ -33,13 +35,13 @@ class SubjectDetailViewController: UIViewController
         // 点击列表面里的cell进入详情界面需要显示数据
         if let model = model
         {
-            todoNameTextField.text = model.tittle
+            todoNameTextField.text = model.title
             isFinishedSwitch.isOn = model.isFinished
         }
         // 点击新增cell进入详情界面无数据
         else
         {
-            model = SubjectModel(tittle: "", isFinished: false)
+            model = SubjectModel(title: "", isFinished: false)
         }
     }
     
@@ -53,15 +55,17 @@ class SubjectDetailViewController: UIViewController
     func setupUI()
     {
         self.title = "新增待办事项详情"
+        self.view.backgroundColor = .white
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .done, target: self, action: #selector(didClickDoneAction))
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .cancel, target: self, action: #selector(didClickCancelAction))
         
         let todoNameLabel = UILabel(frame: CGRect(x: 20, y: 100, width: 100, height: 50))
         todoNameLabel.text = "待办事项"
         
-        let stateLabel = UILabel(frame: CGRect(x: 300, y: 400, width: 50, height: 50))
+        let stateLabel = UILabel(frame: CGRect(x: 20, y: 250, width: 150, height: 50))
         stateLabel.text = "事项状态"
         
+        todoNameTextField.backgroundColor = .lightGray
         view.addSubview(todoNameTextField)
         view.addSubview(isFinishedSwitch)
         view.addSubview(todoNameLabel)
@@ -76,7 +80,7 @@ class SubjectDetailViewController: UIViewController
     @objc func didClickDoneAction()
     {
         // 点击完成按钮后将model作为信号发送到上一个列表界面
-        model.tittle = todoNameTextField.text ?? ""
+        model.title = todoNameTextField.text ?? ""
         model.isFinished = isFinishedSwitch.isOn
         todoSubject.onNext(model)
         self.navigationController?.popViewController(animated: true)
