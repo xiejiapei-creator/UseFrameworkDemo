@@ -102,8 +102,8 @@
 		E97C8E9025538DD8004EB561 /* UICountingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				E97C8E9125538DD8004EB561 /* UICountingLabelViewController.m */,
 				E97C8E9225538DD8004EB561 /* UICountingLabelViewController.h */,
+				E97C8E9125538DD8004EB561 /* UICountingLabelViewController.m */,
 			);
 			path = UICountingLabel;
 			sourceTree = "<group>";
