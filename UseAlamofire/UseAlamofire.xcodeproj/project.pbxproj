@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E9031B7225BA5B7A00AE2740 /* UseAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9031B7125BA5B7A00AE2740 /* UseAlamofire.swift */; };
+		E9031BEB25BFA59300AE2740 /* girl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E9031BEA25BFA59300AE2740 /* girl.mp4 */; };
+		E9031BEE25BFA97500AE2740 /* UseAdvancedAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9031BED25BFA97500AE2740 /* UseAdvancedAlamofire.swift */; };
 		E93BE4AC25B94B7500AB3E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93BE4AB25B94B7500AB3E97 /* AppDelegate.swift */; };
 		E93BE4AE25B94B7500AB3E97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93BE4AD25B94B7500AB3E97 /* SceneDelegate.swift */; };
 		E93BE4B025B94B7500AB3E97 /* UseURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93BE4AF25B94B7500AB3E97 /* UseURLSession.swift */; };
@@ -21,6 +23,8 @@
 		4E061E90EBA3F1723E933A65 /* Pods-UseAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseAlamofire.release.xcconfig"; path = "Target Support Files/Pods-UseAlamofire/Pods-UseAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 		6F032FE2DF609CA4BCCE610A /* Pods_UseAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UseAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9031B7125BA5B7A00AE2740 /* UseAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAlamofire.swift; sourceTree = "<group>"; };
+		E9031BEA25BFA59300AE2740 /* girl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girl.mp4; sourceTree = "<group>"; };
+		E9031BED25BFA97500AE2740 /* UseAdvancedAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAdvancedAlamofire.swift; sourceTree = "<group>"; };
 		E93BE4A825B94B7500AB3E97 /* UseAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93BE4AB25B94B7500AB3E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E93BE4AD25B94B7500AB3E97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E9031B7125BA5B7A00AE2740 /* UseAlamofire.swift */,
+				E9031BED25BFA97500AE2740 /* UseAdvancedAlamofire.swift */,
 				E93BE4AF25B94B7500AB3E97 /* UseURLSession.swift */,
 				E93BE4C025B94B7A00AB3E97 /* SupportingFiles */,
 				E93BE4B925B94B7600AB3E97 /* Info.plist */,
@@ -93,6 +98,7 @@
 		E93BE4C025B94B7A00AB3E97 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E9031BEA25BFA59300AE2740 /* girl.mp4 */,
 				E93BE4AB25B94B7500AB3E97 /* AppDelegate.swift */,
 				E93BE4AD25B94B7500AB3E97 /* SceneDelegate.swift */,
 				E93BE4B125B94B7500AB3E97 /* Main.storyboard */,
@@ -162,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E93BE4B825B94B7600AB3E97 /* LaunchScreen.storyboard in Resources */,
+				E9031BEB25BFA59300AE2740 /* girl.mp4 in Resources */,
 				E93BE4B525B94B7600AB3E97 /* Assets.xcassets in Resources */,
 				E93BE4B325B94B7500AB3E97 /* Main.storyboard in Resources */,
 			);
@@ -218,6 +225,7 @@
 			files = (
 				E93BE4B025B94B7500AB3E97 /* UseURLSession.swift in Sources */,
 				E93BE4AC25B94B7500AB3E97 /* AppDelegate.swift in Sources */,
+				E9031BEE25BFA97500AE2740 /* UseAdvancedAlamofire.swift in Sources */,
 				E9031B7225BA5B7A00AE2740 /* UseAlamofire.swift in Sources */,
 				E93BE4AE25B94B7500AB3E97 /* SceneDelegate.swift in Sources */,
 			);
