@@ -11,3 +11,7 @@
 - [IOS框架：使用网络请求类框架](https://www.jianshu.com/p/5bc774cba7ce)
 
 - [IOS框架：使用数据库类框架](https://www.jianshu.com/p/2d5fa2bc9a3d)
+
+- [IOS框架：RxSwift的使用](https://www.jianshu.com/p/07b5b594c522)
+
+- [IOS框架：Alamofire 5 的使用](https://www.jianshu.com/p/8479a4cfca38)
