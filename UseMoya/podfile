@@ -2,4 +2,6 @@ target 'UseMoya' do
   use_frameworks!
   pod 'Alamofire'
   pod 'Moya'
+  pod 'SwiftyJSON'
+  pod 'MBProgressHUD'
 end

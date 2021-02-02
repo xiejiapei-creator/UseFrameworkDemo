@@ -20,6 +20,13 @@
 		E996ED1825C7AC7A005BFD1B /* UsePop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED1725C7AC7A005BFD1B /* UsePop.swift */; };
 		E996ED2025C7CD4B005BFD1B /* StudentAndTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED1F25C7CD4B005BFD1B /* StudentAndTeacher.swift */; };
 		E996ED2725C7F766005BFD1B /* usersXiejiapei in Resources */ = {isa = PBXBuildFile; fileRef = E996ED2625C7F766005BFD1B /* usersXiejiapei */; };
+		E996ED3425C8092F005BFD1B /* DouBan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED3325C8092F005BFD1B /* DouBan.swift */; };
+		E996ED3825C80968005BFD1B /* DouBanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED3725C80968005BFD1B /* DouBanViewController.swift */; };
+		E996ED4625C8E069005BFD1B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED4525C8E069005BFD1B /* Order.swift */; };
+		E996ED4925C8E17B005BFD1B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED4825C8E17B005BFD1B /* OrderViewController.swift */; };
+		E996ED6125C8EC80005BFD1B /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED6025C8EC80005BFD1B /* LoginAPI.swift */; };
+		E996ED6525C8ECD9005BFD1B /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED6425C8ECD9005BFD1B /* LoginClient.swift */; };
+		E996ED6825C8EDE6005BFD1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ED6725C8EDE6005BFD1B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,13 @@
 		E996ED1725C7AC7A005BFD1B /* UsePop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsePop.swift; sourceTree = "<group>"; };
 		E996ED1F25C7CD4B005BFD1B /* StudentAndTeacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAndTeacher.swift; sourceTree = "<group>"; };
 		E996ED2625C7F766005BFD1B /* usersXiejiapei */ = {isa = PBXFileReference; lastKnownFileType = text; path = usersXiejiapei; sourceTree = "<group>"; };
+		E996ED3325C8092F005BFD1B /* DouBan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBan.swift; sourceTree = "<group>"; };
+		E996ED3725C80968005BFD1B /* DouBanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanViewController.swift; sourceTree = "<group>"; };
+		E996ED4525C8E069005BFD1B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		E996ED4825C8E17B005BFD1B /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		E996ED6025C8EC80005BFD1B /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		E996ED6425C8ECD9005BFD1B /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		E996ED6725C8EDE6005BFD1B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,9 @@
 		E996ECF625C7AC49005BFD1B /* UseMoya */ = {
 			isa = PBXGroup;
 			children = (
+				E996ED5F25C8EC60005BFD1B /* 序列化 */,
+				E996ED4425C8E057005BFD1B /* 订单 */,
+				E996ED3D25C809A4005BFD1B /* 豆瓣 */,
 				E996ED0D25C7AC70005BFD1B /* Pop */,
 				E996ED0C25C7AC4D005BFD1B /* SupportingFiles */,
 				E996ED0525C7AC49005BFD1B /* Info.plist */,
@@ -123,6 +140,34 @@
 				E996ED2625C7F766005BFD1B /* usersXiejiapei */,
 			);
 			path = Pop;
+			sourceTree = "<group>";
+		};
+		E996ED3D25C809A4005BFD1B /* 豆瓣 */ = {
+			isa = PBXGroup;
+			children = (
+				E996ED3725C80968005BFD1B /* DouBanViewController.swift */,
+				E996ED3325C8092F005BFD1B /* DouBan.swift */,
+			);
+			path = "豆瓣";
+			sourceTree = "<group>";
+		};
+		E996ED4425C8E057005BFD1B /* 订单 */ = {
+			isa = PBXGroup;
+			children = (
+				E996ED4525C8E069005BFD1B /* Order.swift */,
+				E996ED4825C8E17B005BFD1B /* OrderViewController.swift */,
+			);
+			path = "订单";
+			sourceTree = "<group>";
+		};
+		E996ED5F25C8EC60005BFD1B /* 序列化 */ = {
+			isa = PBXGroup;
+			children = (
+				E996ED6025C8EC80005BFD1B /* LoginAPI.swift */,
+				E996ED6425C8ECD9005BFD1B /* LoginClient.swift */,
+				E996ED6725C8EDE6005BFD1B /* LoginViewController.swift */,
+			);
+			path = "序列化";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,13 +286,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E996ED2025C7CD4B005BFD1B /* StudentAndTeacher.swift in Sources */,
+				E996ED3425C8092F005BFD1B /* DouBan.swift in Sources */,
 				E996ECF825C7AC49005BFD1B /* AppDelegate.swift in Sources */,
+				E996ED6825C8EDE6005BFD1B /* LoginViewController.swift in Sources */,
+				E996ED3825C80968005BFD1B /* DouBanViewController.swift in Sources */,
+				E996ED6525C8ECD9005BFD1B /* LoginClient.swift in Sources */,
+				E996ED4625C8E069005BFD1B /* Order.swift in Sources */,
 				E996ED1425C7AC70005BFD1B /* Client.swift in Sources */,
+				E996ED6125C8EC80005BFD1B /* LoginAPI.swift in Sources */,
 				E996ED1825C7AC7A005BFD1B /* UsePop.swift in Sources */,
 				E996ED1225C7AC70005BFD1B /* Person.swift in Sources */,
 				E996ED1525C7AC70005BFD1B /* Request.swift in Sources */,
 				E996ECFA25C7AC49005BFD1B /* SceneDelegate.swift in Sources */,
 				E996ED1325C7AC70005BFD1B /* Response.swift in Sources */,
+				E996ED4925C8E17B005BFD1B /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
