@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB136C5FF5090AA40EF3023D /* libPods-UseFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDCA6C67919E7F937D3659C /* libPods-UseFMDB.a */; };
+		E996EF6D25CFCAB2005BFD1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EF6C25CFCAB2005BFD1B /* AppDelegate.m */; };
+		E996EF7025CFCAB2005BFD1B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EF6F25CFCAB2005BFD1B /* SceneDelegate.m */; };
+		E996EF7625CFCAB2005BFD1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E996EF7425CFCAB2005BFD1B /* Main.storyboard */; };
+		E996EF7825CFCAB2005BFD1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E996EF7725CFCAB2005BFD1B /* Assets.xcassets */; };
+		E996EF7B25CFCAB2005BFD1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E996EF7925CFCAB2005BFD1B /* LaunchScreen.storyboard */; };
+		E996EF7E25CFCAB2005BFD1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EF7D25CFCAB2005BFD1B /* main.m */; };
+		E996EF8725CFCAD0005BFD1B /* luckcoffee.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E996EF8625CFCAD0005BFD1B /* luckcoffee.JPG */; };
+		E996EF8B25CFCAF3005BFD1B /* FMDBSimpleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EF8A25CFCAF3005BFD1B /* FMDBSimpleDemoViewController.m */; };
+		E996EF8F25CFCAF8005BFD1B /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EF8E25CFCAF8005BFD1B /* FMDBViewController.m */; };
+		E996EFA625CFF572005BFD1B /* UseJQFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EFA525CFF572005BFD1B /* UseJQFMDB.m */; };
+		E996EFAE25CFF684005BFD1B /* ProductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EFAD25CFF684005BFD1B /* ProductionView.m */; };
+		E996EFB325CFF6DB005BFD1B /* DBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EFB225CFF6DB005BFD1B /* DBCell.m */; };
+		E996EFB825CFF71D005BFD1B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E996EFB725CFF71D005BFD1B /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DDCA6C67919E7F937D3659C /* libPods-UseFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UseFMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3737D932B7BB8A1FF2AEC8F2 /* Pods-UseFMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseFMDB.debug.xcconfig"; path = "Target Support Files/Pods-UseFMDB/Pods-UseFMDB.debug.xcconfig"; sourceTree = "<group>"; };
+		E996EF6825CFCAB2005BFD1B /* UseFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E996EF6B25CFCAB2005BFD1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E996EF6C25CFCAB2005BFD1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E996EF6E25CFCAB2005BFD1B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E996EF6F25CFCAB2005BFD1B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E996EF7525CFCAB2005BFD1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E996EF7725CFCAB2005BFD1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E996EF7A25CFCAB2005BFD1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E996EF7C25CFCAB2005BFD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E996EF7D25CFCAB2005BFD1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E996EF8625CFCAD0005BFD1B /* luckcoffee.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = luckcoffee.JPG; sourceTree = "<group>"; };
+		E996EF8925CFCAF3005BFD1B /* FMDBSimpleDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBSimpleDemoViewController.h; sourceTree = "<group>"; };
+		E996EF8A25CFCAF3005BFD1B /* FMDBSimpleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBSimpleDemoViewController.m; sourceTree = "<group>"; };
+		E996EF8D25CFCAF8005BFD1B /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		E996EF8E25CFCAF8005BFD1B /* FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		E996EFA425CFF572005BFD1B /* UseJQFMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseJQFMDB.h; sourceTree = "<group>"; };
+		E996EFA525CFF572005BFD1B /* UseJQFMDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseJQFMDB.m; sourceTree = "<group>"; };
+		E996EFAC25CFF684005BFD1B /* ProductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionView.h; sourceTree = "<group>"; };
+		E996EFAD25CFF684005BFD1B /* ProductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionView.m; sourceTree = "<group>"; };
+		E996EFB125CFF6DB005BFD1B /* DBCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBCell.h; sourceTree = "<group>"; };
+		E996EFB225CFF6DB005BFD1B /* DBCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBCell.m; sourceTree = "<group>"; };
+		E996EFB625CFF71D005BFD1B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E996EFB725CFF71D005BFD1B /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EA89B11EF9342BEB82430C30 /* Pods-UseFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseFMDB.release.xcconfig"; path = "Target Support Files/Pods-UseFMDB/Pods-UseFMDB.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E996EF6525CFCAB2005BFD1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB136C5FF5090AA40EF3023D /* libPods-UseFMDB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8017B8974DDA841E2A59967 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3737D932B7BB8A1FF2AEC8F2 /* Pods-UseFMDB.debug.xcconfig */,
+				EA89B11EF9342BEB82430C30 /* Pods-UseFMDB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E399346F902C226746E5719A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCA6C67919E7F937D3659C /* libPods-UseFMDB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E996EF5F25CFCAB2005BFD1B = {
+			isa = PBXGroup;
+			children = (
+				E996EF6A25CFCAB2005BFD1B /* UseFMDB */,
+				E996EF6925CFCAB2005BFD1B /* Products */,
+				C8017B8974DDA841E2A59967 /* Pods */,
+				E399346F902C226746E5719A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E996EF6925CFCAB2005BFD1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E996EF6825CFCAB2005BFD1B /* UseFMDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E996EF6A25CFCAB2005BFD1B /* UseFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E996EF8925CFCAF3005BFD1B /* FMDBSimpleDemoViewController.h */,
+				E996EF8A25CFCAF3005BFD1B /* FMDBSimpleDemoViewController.m */,
+				E996EF8D25CFCAF8005BFD1B /* FMDBViewController.h */,
+				E996EF8E25CFCAF8005BFD1B /* FMDBViewController.m */,
+				E996EFBA25CFF730005BFD1B /* JQFMDB */,
+				E996EF8525CFCAB7005BFD1B /* SupportingFiles */,
+				E996EF7C25CFCAB2005BFD1B /* Info.plist */,
+			);
+			path = UseFMDB;
+			sourceTree = "<group>";
+		};
+		E996EF8525CFCAB7005BFD1B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E996EF8625CFCAD0005BFD1B /* luckcoffee.JPG */,
+				E996EF6B25CFCAB2005BFD1B /* AppDelegate.h */,
+				E996EF6C25CFCAB2005BFD1B /* AppDelegate.m */,
+				E996EF6E25CFCAB2005BFD1B /* SceneDelegate.h */,
+				E996EF6F25CFCAB2005BFD1B /* SceneDelegate.m */,
+				E996EF7425CFCAB2005BFD1B /* Main.storyboard */,
+				E996EF7725CFCAB2005BFD1B /* Assets.xcassets */,
+				E996EF7925CFCAB2005BFD1B /* LaunchScreen.storyboard */,
+				E996EF7D25CFCAB2005BFD1B /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E996EFBA25CFF730005BFD1B /* JQFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E996EFA425CFF572005BFD1B /* UseJQFMDB.h */,
+				E996EFA525CFF572005BFD1B /* UseJQFMDB.m */,
+				E996EFAC25CFF684005BFD1B /* ProductionView.h */,
+				E996EFAD25CFF684005BFD1B /* ProductionView.m */,
+				E996EFB125CFF6DB005BFD1B /* DBCell.h */,
+				E996EFB225CFF6DB005BFD1B /* DBCell.m */,
+				E996EFB625CFF71D005BFD1B /* Person.h */,
+				E996EFB725CFF71D005BFD1B /* Person.m */,
+			);
+			path = JQFMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E996EF6725CFCAB2005BFD1B /* UseFMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E996EF8125CFCAB2005BFD1B /* Build configuration list for PBXNativeTarget "UseFMDB" */;
+			buildPhases = (
+				7F06E0E8159E3C42FC4B5D59 /* [CP] Check Pods Manifest.lock */,
+				E996EF6425CFCAB2005BFD1B /* Sources */,
+				E996EF6525CFCAB2005BFD1B /* Frameworks */,
+				E996EF6625CFCAB2005BFD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UseFMDB;
+			productName = UseFMDB;
+			productReference = E996EF6825CFCAB2005BFD1B /* UseFMDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E996EF6025CFCAB2005BFD1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E996EF6725CFCAB2005BFD1B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E996EF6325CFCAB2005BFD1B /* Build configuration list for PBXProject "UseFMDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E996EF5F25CFCAB2005BFD1B;
+			productRefGroup = E996EF6925CFCAB2005BFD1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E996EF6725CFCAB2005BFD1B /* UseFMDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E996EF6625CFCAB2005BFD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E996EF8725CFCAD0005BFD1B /* luckcoffee.JPG in Resources */,
+				E996EF7B25CFCAB2005BFD1B /* LaunchScreen.storyboard in Resources */,
+				E996EF7825CFCAB2005BFD1B /* Assets.xcassets in Resources */,
+				E996EF7625CFCAB2005BFD1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F06E0E8159E3C42FC4B5D59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UseFMDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E996EF6425CFCAB2005BFD1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E996EF6D25CFCAB2005BFD1B /* AppDelegate.m in Sources */,
+				E996EFB325CFF6DB005BFD1B /* DBCell.m in Sources */,
+				E996EFA625CFF572005BFD1B /* UseJQFMDB.m in Sources */,
+				E996EF7E25CFCAB2005BFD1B /* main.m in Sources */,
+				E996EFAE25CFF684005BFD1B /* ProductionView.m in Sources */,
+				E996EF8F25CFCAF8005BFD1B /* FMDBViewController.m in Sources */,
+				E996EFB825CFF71D005BFD1B /* Person.m in Sources */,
+				E996EF8B25CFCAF3005BFD1B /* FMDBSimpleDemoViewController.m in Sources */,
+				E996EF7025CFCAB2005BFD1B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E996EF7425CFCAB2005BFD1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E996EF7525CFCAB2005BFD1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E996EF7925CFCAB2005BFD1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E996EF7A25CFCAB2005BFD1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E996EF7F25CFCAB2005BFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E996EF8025CFCAB2005BFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E996EF8225CFCAB2005BFD1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3737D932B7BB8A1FF2AEC8F2 /* Pods-UseFMDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UseFMDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.framework.UseFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E996EF8325CFCAB2005BFD1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA89B11EF9342BEB82430C30 /* Pods-UseFMDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UseFMDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.framework.UseFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E996EF6325CFCAB2005BFD1B /* Build configuration list for PBXProject "UseFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E996EF7F25CFCAB2005BFD1B /* Debug */,
+				E996EF8025CFCAB2005BFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E996EF8125CFCAB2005BFD1B /* Build configuration list for PBXNativeTarget "UseFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E996EF8225CFCAB2005BFD1B /* Debug */,
+				E996EF8325CFCAB2005BFD1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E996EF6025CFCAB2005BFD1B /* Project object */;
+}
