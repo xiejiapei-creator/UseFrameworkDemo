@@ -4,20 +4,33 @@ PODS:
   - FMDB/standard (2.7.5)
   - JQFMDB (1.1.6):
     - FMDB
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
 
 DEPENDENCIES:
   - FMDB
   - JQFMDB
+  - WCDB
 
 SPEC REPOS:
   trunk:
     - FMDB
     - JQFMDB
+    - SQLiteRepairKit
+    - WCDB
+    - WCDBOptimizedSQLCipher
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   JQFMDB: 39ab0d6d7c26fd30e51c4dd92edcb27506a34c3a
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: 13aa38587b22bf72e979dbb340e2c1e83d021508
+PODFILE CHECKSUM: 0e91d33cfdba785538087cbf45403ec3d6e3257f
 
 COCOAPODS: 1.9.1

@@ -5,6 +5,6 @@ target 'UseFMDB' do
  
 pod 'FMDB'
 pod 'JQFMDB'
-
+pod 'WCDB'
 
 end
